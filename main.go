@@ -31,7 +31,7 @@ func Homepage(w http.ResponseWriter, r *http.Request) {
 
 func reader(conn *websocket.Conn) {
 	for {
-		messageType, p, err := conn.ReadMessage()
+		messageType, p, err := conn.ReadMessage() //read messagenya dari user
 		if err != nil {
 			log.Printf("FuncReader, %s \n", err)
 			return

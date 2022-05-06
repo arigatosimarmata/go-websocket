@@ -14,7 +14,7 @@
 
         socket.onopen = () => {
             console.log("Successfully Connected");
-            socket.send("Hi From The Client!")
+            socket.send("Hi From The Client!") //message yang dikirim ke host
         }
 
         socket.onclose = (event) =>{
